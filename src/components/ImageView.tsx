@@ -22,7 +22,7 @@ export const ImageView = () => {
             ) : null}
           </li>
         ))}
-        <li className="hidden gap-4 py-4 md:flex">
+        <ul className="hidden gap-4 py-4 md:flex">
           {thumbnails.map(({ id, name, image }) => (
             <li key={id}>
               <button
@@ -39,7 +39,7 @@ export const ImageView = () => {
               </button>
             </li>
           ))}
-        </li>
+        </ul>
 
         <li className="md:hidden">
           <button

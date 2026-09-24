@@ -33,7 +33,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub](https://github.com/piyush-kaushik24/e-commerce-product-page)
-- Live Site URL: [E-commerce product page ](<>)
+- Live Site URL: [E-commerce product page ](https://e-commerce-product-page-ashy-seven.vercel.app/)
 
 ## My process
 
@@ -48,7 +48,15 @@ Users should be able to:
 - [React](https://react.dev/) - JS library
 - [Tailwind CSS](https://tailwindcss.com/) - CSS framework
 
-### What I learned
+### What I
+
+- Practiced breaking a larger UI into reusable React components.
+- Used useState to manage product quantity, cart state, mobile navigation, image selection, and the image lightbox.
+- Built a data-driven image gallery using .map() instead of repeating similar JSX.
+- Implemented desktop and mobile image galleries with next/previous navigation and thumbnail selection.
+- Built a responsive lightbox image viewer for the desktop layout.
+- Used useEffect and useRef to handle click-outside behavior for menus and the cart.
+- Improved my understanding of managing multiple independent pieces of UI state in a React application.
 
 ## Author
 

@@ -26,7 +26,7 @@ export const ImageViewLarge = ({
               ) : null}
             </li>
           ))}
-          <li className="absolute top-full left-1/2 flex -translate-x-1/2 translate-y-1/2 gap-6">
+          <ul className="absolute top-full left-1/2 flex -translate-x-1/2 translate-y-1/2 gap-6">
             {thumbnails.map(({ id, name, image }) => (
               <li key={id} className="w-20">
                 <button
@@ -42,7 +42,7 @@ export const ImageViewLarge = ({
                 </button>
               </li>
             ))}
-          </li>
+          </ul>
 
           <li>
             <button

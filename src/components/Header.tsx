@@ -20,7 +20,7 @@ export const Header = ({ cart, setCart }: HeaderProps) => {
     }
     document.addEventListener("click", handleClick);
     return () => document.removeEventListener("click", handleClick);
-  }, [cart]);
+  }, []);
 
   return (
     <header
@@ -30,8 +30,6 @@ export const Header = ({ cart, setCart }: HeaderProps) => {
       <span className="flex items-center gap-4 py-4 md:flex-row-reverse">
         <button
           type="button"
-          aria-pressed={menu}
-          aria-label={`${!menu && "Open Menu"}`}
           onClick={() => setMenu(!menu)}
           className="relative z-20 md:hidden"
         >

@@ -5,7 +5,7 @@ type CartMenuProps = {
   setcart: React.Dispatch<React.SetStateAction<number | null>>;
 };
 export const CartMenu = ({ cart, setcart }: CartMenuProps) => {
-  const cartTotal = cart ? cart * 125 : null;
+  const cartTotal = cart ? cart * 125.00 : null;
 
   return (
     <div className="shadow-very-dark-blue absolute top-15 left-1/2 z-30 w-[95%] -translate-x-1/2 rounded-xl bg-white shadow-2xl md:top-25 md:-right-30 md:left-auto md:w-80">
@@ -24,7 +24,7 @@ export const CartMenu = ({ cart, setcart }: CartMenuProps) => {
               <span className="flex flex-col">
                 <span>Fall Limited Edition Sneakers</span>
                 <span className="flex gap-2">
-                  <span>$125.00 x 3</span>
+                  <span>$125.00 x {cart}</span>
                   <span className="font-bold text-black">${cartTotal}</span>
                 </span>
               </span>

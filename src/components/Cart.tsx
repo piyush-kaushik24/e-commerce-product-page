@@ -11,7 +11,7 @@ export const Cart = ({ quantity, setQuantity, setCart }: CartProps) => {
       <div className="bg-light-grayish-blue flex justify-between rounded-lg p-4 md:w-1/2">
         <button
           type="button"
-          aria-label={`Quantity Decreased by ${quantity}.`}
+          aria-label="Decrease quantity."
           onClick={() => {
             if (quantity >= 1) {
               setQuantity(quantity - 1);
@@ -24,7 +24,7 @@ export const Cart = ({ quantity, setQuantity, setCart }: CartProps) => {
         <span className="font-bold">{quantity}</span>
         <button
           type="button"
-          aria-label={`Quantity Increased by ${quantity}.`}
+          aria-label="Increase quantity."
           onClick={() => setQuantity(quantity + 1)}
           className="hover:cursor-pointer hover:opacity-80"
         >
